@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Booust:Homepage</title>
+    <script type="text/javascript">
+        function checkname(){
+            var animalName= document.getElementById('animalName').value;
+            var animalName= ["Panda", "Rabbit", "Salamander", "Beluga whale", 																																																																											"Rhinoceros"];
+            for (var i = 0; i < animalName.length; i++){
+            if (animalName.indexOf(animalName) == -1)
+               {alert("failure");
+               return false;
+                }
+            else {
+                alert("success");
+                return true;
+            }
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>WELCOME</h1>
+<p>Please enter the name of an animal</p>
+<input type="text" name="animalName" placeholder="enter animal name" id="animalName"/>
+<button type="button" onclick= "checkname()">Verify</button>  
+</body>
+</html>
